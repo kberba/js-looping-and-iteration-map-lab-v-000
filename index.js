@@ -10,6 +10,6 @@ function nameToAttributes(drivers) {
   //   return Object.assign({}, aDriver, { firstName: aDriver.firstName, lastName: aDriver.lastName });
   let fullName = drivers.map( driver =>
     let splitName = drivers.split(" ");
-    const fullName = return Object.assign({}, { firstName: splitName[0], lastName: splitName[1]});
+    return Object.assign({}, { firstName: splitName[0], lastName: splitName[1]});
   );
 }
