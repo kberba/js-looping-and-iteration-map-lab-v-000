@@ -10,19 +10,10 @@ function nameToAttributes(drivers) {
    //   return Object.assign({}, aDriver, { firstName: aDriver.firstName, lastName: aDriver.lastName });
    return drivers.map(function(aDriver) {
      let splitName = aDriver.split(" ");
-     return Object.assign({}, 
-       {firstName: splitName[0]}, 
+     return Object.assign({},
+       {firstName: splitName[0]},
        {lastName: splitName[1]}
      );
    });
  }
 
-// function nameToAttributes(drivers){
-//   return drivers.map(function(element){
-//     let nameArray = element.split(" ");
-//     return Object.assign({},
-//     {firstName: nameArray[0]},
-//     {lastName: nameArray[1]}
-//     );
-//   });
-// }
