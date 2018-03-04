@@ -6,6 +6,9 @@ function lowerCaseDrivers(drivers) {
 }
 
 function nameToAttributes(drivers) {
-  let fullName = drivers.map(driver => [driver.firstName + ' ' + driver.lastName]);
-  return fullName;
+  const fullName = drivers.map(driver => return Object.assign({}, driver, { firstName: driver.firstName, lastName: driver.lastName });
 }
+
+ // const newEngineers = map(oldAccounts, function (account) {
+ //   return Object.assign({}, account, { accessLevel: 'admin' });
+ // });
