@@ -11,16 +11,3 @@ function nameToAttributes(drivers) {
   let splitName = drivers.split(" ");
   const fullName = return Object.assign({}, { firstName: splitName[0], lastName: splitName[1]});
 }
-
-
-const old = [
-  {name: 'a', value: 'b', other: 'c'}, 
-  {name: 'd', value: 'e', other: 'f'}
-]
-
-const transformed = Object.assign(
-  {}, 
-  ...old.map(({name, value}) => ({ [name]: value }))
-);
-
-console.log(transformed);
