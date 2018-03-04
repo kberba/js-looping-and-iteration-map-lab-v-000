@@ -14,3 +14,7 @@ function nameToAttributes(drivers) {
      );
    });
  }
+
+ function attributesToPhrase(drivers) {
+   
+ }
