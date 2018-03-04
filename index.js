@@ -12,5 +12,4 @@ function nameToAttributes(drivers) {
     let splitName = aDriver.split(" ");
     return Object.assign({}, { firstName: splitName[0]}, { lastName: splitName[1]});
   };
-
 }
